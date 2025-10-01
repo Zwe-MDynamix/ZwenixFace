@@ -77,10 +77,10 @@ streamlit run app.py
 
 ```bash
 # Build from source
-git clone https://github.com/Zwe-MDynamix/FaceSwapper_App.git
+git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
-docker build -t face-swapper-app .
-docker run -p 8501:8501 face-swapper-app
+docker build -t zwenixface_swapper-1.0 .
+docker run -p 8501:8501 ZwenixFace_swAPPer-1.0
 ```
 
 ### Option 2: Local Installation
