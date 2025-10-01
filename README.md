@@ -1,13 +1,13 @@
-# Face Swapper App 🎭 
+# ZwenixFace Sw**APP**er 🎭 
 🌟 Docker Images/Containers, GitLab CI-CD Pipeline & README created and written by: 
 
 | **Zwelakhe Msuthu** | DevOps, SecDevOps & Cloud Infrastructure Engineer |
 
 | **Zwe_M Dynamix** | e: zwenix@gmail.com |
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/Zwe-MDynamix/FaceSwapper_App)](https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App)
-[![Docker Image Size](https://img.shields.io/docker/image-size/Zwe-MDynamix/FaceSwapper_App)](https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App)
-[![Build Status](https://github.com/Zwe-MDynamix/FaceSwapper_App/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/Zwe-MDynamix/FaceSwapper_App/actions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/zwelakhem/zwenixface_swapper-1.0)](https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App)
+[![Docker Image Size](https://img.shields.io/docker/image-size/Zwe-MDynamix/ZwenixFace_swAPPer-1.0)](https://hub.docker.com/r/Zwe-MDynamix/ZwenixFace_swAPPer-1.0)
+[![Build Status](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/ZwenixFace_swAPPer-1.0/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A professional-grade face swapping application built with Streamlit and powered by InsightFace. This application enables real-time face swapping with high-quality results using state-of-the-art deep learning models.
@@ -28,10 +28,9 @@ A professional-grade face swapping application built with Streamlit and powered 
 
 ```bash
 # Pull and run the latest image
-docker run -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
-
+docker run -p 8501:8501 zwelakhem/ZwenixFace_swAPPer-1.0:latest
 # Or run with custom port
-docker run -p 3000:8501 Zwe-MDynamix/FaceSwapper_App:latest
+docker run -p 3001:8501 zwelakhem/ZwenixFace_swAPPer-1.0:latest
 ```
 
 Visit `http://localhost:8501` to access the application.
@@ -40,7 +39,7 @@ Visit `http://localhost:8501` to access the application.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Zwe-MDynamix/FaceSwapper_App.git
+git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
 
 # Start the application
@@ -51,7 +50,7 @@ docker-compose up
 
 ```bash
 # Clone the repository
-git clone https://github.com/Zwe-MDynamix/FaceSwapper_App.git
+git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
 
 # Create virtual environment
@@ -88,7 +87,7 @@ docker run -p 8501:8501 face-swapper-app
 
 ```bash
 # Clone repository
-git clone https://github.com/Zwe-MDynamix/FaceSwapper_App.git
+git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
 
 # Install system dependencies (Ubuntu/Debian)
@@ -269,13 +268,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/Zwe-MDynamix/FaceSwapper_App/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Zwe-MDynamix/FaceSwapper_App/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/discussions)
 - **Email**: zwenix@gmail.com
 
 ## 🔄 Changelog
 
-### v1.0.0 (2024-12-XX)
+### v1.0.0 (2022-09-02)
 - Initial release
 - Basic face swapping functionality
 - Docker support
