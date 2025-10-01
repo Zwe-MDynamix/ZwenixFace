@@ -1,0 +1,53 @@
+# Use the official Docker image for running the pipeline
+image: docker:latest
+
+# We need the Docker daemon running inside the container to build images
+services:
+  - docker:dind
+
+# Global variables for easy configuration.
+# These variables rely on your GitLab CI/CD Secrets being set.
+variables:
+  # The path to your Dockerfile (in the project root)
+  DOCKERFILE_PATH: Dockerfile
+  
+  # The combined Docker Hub path: (e.g., zwelakhem/face-swapper-app)
+  IMAGE_NAME: zwelakhem/face-swapper_app  # <-- !! REPLACE with your actual REPO name !!
+  
+  # Use the commit SHA as a specific tag
+  DOCKER_TAG: $CI_COMMIT_SHORT_SHA 
+
+stages:
+  - build
+
+# --- Docker Build and Push Job ---
+docker-build-push:
+  stage: build
+  
+  # Define the execution environment
+  image: docker:latest
+  services:
+    - docker:dind
+
+  # Pre-execution: Log in to Docker Hub
+  before_script:
+    - echo "Logging into Docker Registry..."
+    # DOCKER_USER and DOCKER_PASSWORD must be set as GitLab CI/CD Variables
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+  script:
+    # 1. Build the image, tagging it with both the commit SHA and 'latest'
+    - docker build 
+        -f $DOCKERFILE_PATH 
+        -t $IMAGE_NAME:$DOCKER_TAG 
+        -t $IMAGE_NAME:latest 
+        .
+    
+    # 2. Push the images to the registry
+    - docker push $IMAGE_NAME:$DOCKER_TAG
+    - docker push $IMAGE_NAME:latest
+  
+  # Configuration to restrict when this job runs
+  rules:
+    # This job will only run when a commit is pushed to the 'main' branch
+    - if: $CI_COMMIT_BRANCH == "main"

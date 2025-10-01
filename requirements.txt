@@ -1,4 +1,9 @@
 opencv-python
 matplotlib
+numpy
 insightface
+pandas
+Pillow
+scikit-learn
 onnxruntime
+streamlit
