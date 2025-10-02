@@ -7,7 +7,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/zwelakhem/zwenixface_swapper-1.0)](https://hub.docker.com/r/zwelakhem/zwenixface_swapper-1.0)
 [![Docker Image Size](https://img.shields.io/docker/image-size/zwelakhem/zwenixface_swapper-1.0)](https://hub.docker.com/r/zwelakhem/zwenixface_swapper-1.0)
-[![Build Status](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/actions)
+[![Build Status](https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0/actions/runs/18187586157/job/51775134874)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A professional-grade face swapping application built with Streamlit and powered by InsightFace. This application enables real-time face swapping with high-quality results using state-of-the-art deep learning models.
