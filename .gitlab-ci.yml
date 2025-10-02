@@ -12,7 +12,7 @@ variables:
   DOCKERFILE_PATH: Dockerfile
   
   # The combined Docker Hub path: (e.g., zwelakhem/face-swapper-app)
-  IMAGE_NAME: zwelakhem/face-swapper_app  # <-- !! REPLACE with your actual REPO name !!
+  IMAGE_NAME: zwelakhem/zwenixface_swapper-1.0:latest  # <-- !! REPLACE with your actual REPO name !!
   
   # Use the commit SHA as a specific tag
   DOCKER_TAG: $CI_COMMIT_SHORT_SHA 
