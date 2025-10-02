@@ -40,7 +40,7 @@ Visit `http://localhost:8501` to access the application.
 ```bash
 # Clone the repository
 git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
-cd face-swapper-app
+cd ZwenixFace_swAPPer-1.0
 
 # Start the application
 docker-compose up
@@ -51,7 +51,7 @@ docker-compose up
 ```bash
 # Clone the repository
 git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
-cd face-swapper-app
+cd ZwenixFace_swAPPer-1.0
 
 # Create virtual environment
 python -m venv venv
@@ -79,8 +79,8 @@ streamlit run app.py
 # Build from source
 git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
-docker build -t zwenixface_swapper-1.0 .
-docker run -p 8501:8501 ZwenixFace_swAPPer-1.0
+docker build -t zwenixface_swapper-1.0:latest .
+docker run -p 8501:8501 ZwenixFace_swAPPer-1.0:latest
 ```
 
 ### Option 2: Local Installation
@@ -88,7 +88,7 @@ docker run -p 8501:8501 ZwenixFace_swAPPer-1.0
 ```bash
 # Clone repository
 git clone https://github.com/Zwe-MDynamix/ZwenixFace_swAPPer-1.0.git
-cd face-swapper-app
+cd ZwenixFace_swAPPer-1.0
 
 # Install system dependencies (Ubuntu/Debian)
 sudo apt-get update
@@ -224,7 +224,7 @@ FACE_DETECTION_CONFIDENCE=0.3  # Lower = more sensitive
 
 ```bash
 # Run with debug logging
-docker run -e STREAMLIT_LOGGER_LEVEL=debug -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
+docker run -e STREAMLIT_LOGGER_LEVEL=debug -p 8501:8501 Zwe-MDynamix/ZwenixFace_swAPPer-1.0:latest
 ```
 
 ## 🤝 Contributing
@@ -241,7 +241,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/face-swapper-app.git
+git clone https://github.com/your-username/ZwenixFace_swAPPer-1.0.git
 cd face-swapper-app
 
 # Create development environment
